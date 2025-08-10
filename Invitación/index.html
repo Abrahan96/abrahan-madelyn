@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Nos Casamos! - Abrahan & Madelyn</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="invitacion">
+        <!-- Portada -->
+        <header class="portada">
+            <h1>Abrahan & Madelyn</h1>
+            <p>11 · 10 · 2025</p>
+            <div class="flores"></div>
+        </header>
+
+        <!-- Detalles -->
+        <section class="detalles">
+            <h2>¡Celebra con nosotros!</h2>
+            <p>Queremos compartir este día especial contigo.</p>
+            <div class="info">
+                <p><strong>📍 Lugar:</strong></p>
+                <p><strong>⏰ Hora:</strong> 18:30 Hrs.</p>
+                <p><strong>🎩 Código de vestimenta:</strong> Jean y color blanco</p>
+            </div>
+        </section>
+
+        <!-- RSVP -->
+        <section class="rsvp">
+            <h2>Confirma tu asistencia</h2>
+            <form id="rsvpForm">
+                <input type="text" id="nombre" placeholder="Nombre completo*" required>
+                <select id="confirmacion" required>
+                    <option value="" disabled selected>¿Asistirás?*</option>
+                    <option value="Sí">¡Sí, estaré allí!</option>
+                    <option value="No">Lo siento, no podré asistir</option>
+                </select>
+                <input type="number" id="num_personas" placeholder="Número de personas" min="1" value="1">
+                <textarea id="mensaje" placeholder="Mensaje (opcional)"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="respuesta"></p>
+        </section>
+
+        <!-- Countdown -->
+        <section class="countdown">
+            <h3>Faltan:</h3>
+            <div class="timer">
+                <span id="dias"></span> días
+                <span id="horas"></span> horas
+                <span id="minutos"></span> minutos
+            </div>
+        </section>
+    </div>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* Variables de color */
+:root {
+    --color-primario: #e8c4c4;
+    --color-secundario: #8b5a5a;
+    --color-texto: #333;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff9f9;
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.invitacion {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.portada {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('..//assets/foto1.JPG');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.portada h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+    color: var(--color-secundario);
+}
+
+.portada p {
+    font-size: 1.5rem;
+    margin: 10px 0 0;
+}
+
+.detalles {
+    margin: 40px 0;
+}
+
+.rsvp {
+    background-color: var(--color-primario);
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+.rsvp form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.rsvp input, .rsvp select, .rsvp textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rsvp button {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.rsvp button:hover {
+    background-color: #6d4545;
+}
+
+.countdown {
+    margin: 40px 0;
+    font-size: 1.2rem;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.timer span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .portada h1 {
+        font-size: 2.5rem;
+    }
+}
